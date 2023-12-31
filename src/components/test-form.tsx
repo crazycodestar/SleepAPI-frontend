@@ -32,11 +32,11 @@ const TestForm = () => {
 					value={delay}
 					onChange={(e) => setDelay(e.currentTarget.value)}
 					max={25}
-					className="rounded-md px-3 border border-[#F9F7F5] bg-transparent"
+					className="rounded-md px-3 bg-[#F9F7F5] text-black"
 					placeholder="Delay(ms)"
 				/>
 				<button
-					className="flex gap-1.5 items-center disabled:cursor-not-allowed justify-center rounded-md border border-[#F9F7F5] bg-transparent px-3 py-2 font-medium"
+					className="flex gap-1.5 items-center disabled:cursor-not-allowed justify-center rounded-md bg-[#F9F7F5] text-black px-3 py-2 font-medium"
 					disabled={isPending}
 					onClick={handleSubmit}
 				>
